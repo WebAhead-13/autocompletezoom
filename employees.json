@@ -1,0 +1,271 @@
+{
+    "Employees" : [
+
+    {
+    "id":"1",
+    "jobTitleName":"Developer",
+    "firstName":"Romin",
+    "lastName":"Irani",
+    "preferredFullName":"Romin Irani",
+    "region":"CA",
+    "phoneNumber":"408-1234567",
+    "emailAddress":"romin.k.irani@gmail.com"
+    },
+
+    {
+    "id":"2",
+    "jobTitleName":"Developer",
+    "firstName":"Neil",
+    "lastName":"Irani",
+    "preferredFullName":"Neil Irani",
+    "region":"CA",
+    "phoneNumber":"408-1111111",
+    "emailAddress":"neilrirani@gmail.com"
+    },
+
+    {
+    "id":"3",
+    "jobTitleName":"Program Directory",
+    "firstName":"Tom",
+    "lastName":"Hanks",
+    "preferredFullName":"Tom Hanks",
+    "region":"CA",
+    "phoneNumber":"408-2222222",
+    "emailAddress":"tomhanks@gmail.com"
+    },
+
+    {
+        "id":"4",
+        "jobTitleName":"Full Stack Developer",
+        "firstName":"Ahmed",
+        "lastName":"Yousef",
+        "preferredFullName":"Ahmed Yousef",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Ahmed_Yousef@gmail.com"
+    }, 
+    {
+        "id":"5",
+        "jobTitleName":"Full Stack Developer",
+        "firstName":"Esraa",
+        "lastName":"Ayoub",
+        "preferredFullName":"Esraa Ayoub",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"esraaAyoub@gmail.com"
+    }, 
+
+    {
+        "id":"6",
+        "jobTitleName":"Full Stack Developer",
+        "firstName":"Thaier",
+        "lastName":"Bashir",
+        "preferredFullName":"Thaier Bashir",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Thaier.Bashir@gmail.com"
+    },
+
+    {
+        "id":"7",
+        "jobTitleName":"Full Stack Developer",
+        "firstName":"Doaa",
+        "lastName":"Ziadat",
+        "preferredFullName":"Doaa Ziadat",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"doaaziadat@gmail.com"
+    },
+
+    {
+        "id":"8",
+        "jobTitleName":"Backend Engineer",
+        "firstName":"Jason",
+        "lastName":"Butto",
+        "preferredFullName":"Jason Butto",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"jasonButto@gmail.com"
+    },
+    
+    {
+        "id":"9",
+        "jobTitleName":"QA Engineer",
+        "firstName":"Jerry",
+        "lastName":"Reto",
+        "preferredFullName":"Jerry Reto",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"jasonButto@gmail.com"
+    },
+    
+    {
+        "id":"10",
+        "jobTitleName":"Devops Developr",
+        "firstName":"Jacob",
+        "lastName":"Bery",
+        "preferredFullName":"Jacob Bery",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Jacob@gmail.com"
+    },
+    
+    {
+        "id":"11",
+        "jobTitleName":"Frontend Enginer",
+        "firstName":"Jamie",
+        "lastName":"Butto",
+        "preferredFullName":"Jamie Butto",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Jamie@gmail.com"
+    },
+
+    {
+        "id":"12",
+        "jobTitleName":"QA Enginer",
+        "firstName":"Jessica",
+        "lastName":"Dark",
+        "preferredFullName":"Jessica Dark",
+        "region":"IS",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Jessi@gmail.com"
+    },
+
+    {
+        "id":"13",
+        "jobTitleName":"Developer",
+        "firstName":"Ava",
+        "lastName":"Dark",
+        "preferredFullName":"Ava Dark",
+        "region":"FR",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Ava@gmail.com"
+    },
+
+    {
+        "id":"14",
+        "jobTitleName":"Developer",
+        "firstName":"Asher",
+        "lastName":"Brown",
+        "preferredFullName":"Asher Brown",
+        "region":"FR",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Asher@gmail.com"
+    },
+    {
+        "id":"15",
+        "jobTitleName":"Automation Engineer",
+        "firstName":"Amie",
+        "lastName":"Jones",
+        "preferredFullName":"Amie Jones",
+        "region":"FR",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Amie@gmail.com"
+    },
+
+    {
+        "id":"16",
+        "jobTitleName":"QA Developer",
+        "firstName":"Amelia",
+        "lastName":"Obama",
+        "preferredFullName":"Amelia Obama",
+        "region":"FR",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"amelia@gmail.com"
+    },
+
+    {
+        "id":"17",
+        "jobTitleName":"QA Developer",
+        "firstName":"Amelia",
+        "lastName":"Obama",
+        "preferredFullName":"Amelia Obama",
+        "region":"FR",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"amelia@gmail.com"
+    },
+    {
+        "id":"18",
+        "jobTitleName":"Developer",
+        "firstName":"Ellie",
+        "lastName":"Obama",
+        "preferredFullName":"Ellie Obama",
+        "region":"FR",
+        "phoneNumber":"408-2245223",
+        "emailAddress":"Ellie@gmail.com"
+    },
+    {
+        "id":"19",
+        "jobTitleName":"QA Developer",
+        "firstName":"Edward",
+        "lastName":"Obama",
+        "preferredFullName":"Edward Obama",
+        "region":"FR",
+        "phoneNumber":"408-3312222",
+        "emailAddress":"edward@gmail.com"
+    },
+    {
+        "id":"20",
+        "jobTitleName":"QA Developer",
+        "firstName":"Emma",
+        "lastName":"Miller",
+        "preferredFullName":"Emma Miller",
+        "region":"FR",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Emma.12@gmail.com"
+    },
+    {
+        "id":"21",
+        "jobTitleName":"DevOps Developer",
+        "firstName":"Tommy",
+        "lastName":"Miller",
+        "preferredFullName":"Tommy Miller",
+        "region":"FR",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"tommy@gmail.com"
+    },
+    {
+        "id":"22",
+        "jobTitleName":"C Developer",
+        "firstName":"Mia",
+        "lastName":"Miller",
+        "preferredFullName":"Mia Miller",
+        "region":"USA",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"mia@gmail.com"
+    },
+    {
+        "id":"23",
+        "jobTitleName":"Java Developer",
+        "firstName":"Daisy",
+        "lastName":"Brown",
+        "preferredFullName":"Daisy Brown",
+        "region":"USA",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Daisy@gmail.com"
+    },
+    {
+        "id":"24",
+        "jobTitleName":"C++ Developer",
+        "firstName":"Danny",
+        "lastName":"Davis",
+        "preferredFullName":"Danny Davis",
+        "region":"FR",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"Danny_9@gmail.com"
+    },
+    {
+        "id":"25",
+        "jobTitleName":"Unity Developer",
+        "firstName":"David",
+        "lastName":"Garcia",
+        "preferredFullName":"David Garcia",
+        "region":"USA",
+        "phoneNumber":"408-2222222",
+        "emailAddress":"David@gmail.com"
+    }
+
+    ]
+
+    }
