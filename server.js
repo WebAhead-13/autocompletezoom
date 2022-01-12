@@ -30,7 +30,17 @@ server.use((req, res, next) => {
   next();
 });
 
-// Auth
+function checkAuth(req, res, next) {
+  const user = req.user;
+  if (!user) {
+    res.status(401).send(`
+      <h1>Please log in to view this page</h1>
+      <a href="/log-in">Log in</a>
+    `);
+  } else {
+    next();
+  }
+}
 
 server.get("/",(req,res) =>{
     const user=req.user;
@@ -50,7 +60,7 @@ server.get("/",(req,res) =>{
         <body>
           <div class="topnav">
             <a class="active" href="/">Home</a>
-            <a href="/search">Log in</a>
+            <a href="/search">Search</a>
             <h3 style="display:inline; color:#04AA6D; margin-left:600px; margin-top:10px;">You Are Connected as: ${user.email} </h3>
             <a href="/log-out">Log out</a>
 
@@ -102,7 +112,7 @@ server.get("/log-in", (req, res) => {
 
   })
 
-  server.get("/search", (req, res) => {
+  server.get("/search",checkAuth, (req, res) => {
     // add if.. else to check cookies AUTH
     res.send(`
     <!DOCTYPE html>
