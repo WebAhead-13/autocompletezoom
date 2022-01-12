@@ -15,15 +15,30 @@ fetch("/employees")
 
   input.addEventListener("input", function(e) {
     console.log(e.target.value)
-    const text=e.target.value;
+    const text = e.target.value;
+    var result = new Array();
     if(e.target.value) {
+      var index=0;
     for(let i=0;i<data.Employees.length;i++)
     {
       let name=data.Employees[i].firstName;
-      if(name.startsWith(text))
+      if((name.toLowerCase()).startsWith((text).toLowerCase())){
+        result[index] = name;
         console.log(name)
+        index++;
+      }
 
     }
+    var options = '';
+
+    for (var i = 0; i < result.length; i++) {
+    options += '<option value="' + result[i] + '" />';
+    document.getElementById('results').innerHTML = options;
+
+}
+
+
+  
   }
 
 

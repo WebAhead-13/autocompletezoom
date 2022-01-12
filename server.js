@@ -134,10 +134,21 @@ server.get("/log-in", (req, res) => {
     
     <form autocomplete="off" action="/action_page.php">
       <div class="autocomplete" style="width:300px;">
-        <input id="myInput" type="text" name="myCountry" placeholder="Country">
+        <input list="results" id="myInput" type="text" name="myCountry" placeholder="Country">
+        <datalist id="results">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Internet Explorer">
+        <option value="Opera">
+        <option value="Safari">
+        <option value="Microsoft Edge">
+        </datalist>
       </div>
-      <input type="submit">
-    </form>
+   
+ 
+
+   </form>
+
     <script src="Search.js"> </script>
     </body>
     </html>
