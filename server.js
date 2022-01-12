@@ -2,6 +2,7 @@ const express = require("express");
 const cookieParser=require("cookie-parser");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
+const jsonEmployee = require("./employees.json")
 
 const SECRET =process.env.SECRET;
 
@@ -11,10 +12,6 @@ server.use(cookieParser());
 server.use(express.urlencoded());
 
 
-server.listen(3000,()=>{
-    console.log("Server listening on http:localhost:3000");
-})
-
 server.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
   next();
@@ -22,7 +19,6 @@ server.use((req, res, next) => {
 
 server.use((req, res, next) => {
   const token = req.cookies.user;
-  console.log(token)
   if (token) {
     const user = jwt.verify(token, SECRET);
     req.user = user;
@@ -64,11 +60,10 @@ server.get("/",(req,res) =>{
             <h3 style="display:inline; color:#04AA6D; margin-left:600px; margin-top:10px;">You Are Connected as: ${user.email} </h3>
             <a href="/log-out">Log out</a>
 
-
           </div>
           
-          
         </body>
+
         </html>`);
       } else {
         // res.send(`<h1>Hello world</h1><a href="/log-in">Log in</a>`);
@@ -112,6 +107,12 @@ server.get("/log-in", (req, res) => {
 
   })
 
+  server.get("/employees", (req, res) => {
+    res.send(jsonEmployee);
+
+  })
+  
+
   server.get("/search",checkAuth, (req, res) => {
     // add if.. else to check cookies AUTH
     res.send(`
@@ -136,6 +137,7 @@ server.get("/log-in", (req, res) => {
       </div>
       <input type="submit">
     </form>
+    <script src="Search.js"> </script>
     </body>
     </html>
   `);
@@ -149,6 +151,11 @@ server.get("/log-in", (req, res) => {
 })
 
   server.use(express.static("public1"));
+
+  server.listen(3000,()=>{
+    console.log("Server listening on http:localhost:3000");
+})
+
 
 
 
