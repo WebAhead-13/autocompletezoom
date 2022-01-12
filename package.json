@@ -1,0 +1,30 @@
+{
+  "name": "autocompletezoom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js -L"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebAhead-13/autocompletezoom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebAhead-13/autocompletezoom/issues"
+  },
+  "homepage": "https://github.com/WebAhead-13/autocompletezoom#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
