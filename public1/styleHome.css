@@ -1,0 +1,33 @@
+body{
+  background-image: url("https://us.123rf.com/450wm/jirsak/jirsak1601/jirsak160100071/51751193-human-resources-crm-data-mining-and-social-media-concept-officer-looking-for-employee-represented-by.jpg?ver=6");
+  background-repeat:no-repeat;
+  background-size: cover;
+/* background-color: black; */
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
