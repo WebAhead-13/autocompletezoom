@@ -6,10 +6,10 @@ require("dotenv").config();
 const SECRET =process.env.SECRET;
 
 const server = express();
+//
 
 server.use(cookieParser());
 server.use(express.urlencoded());
-
 
 server.listen(3000,()=>{
     console.log("Server listening on http:localhost:3000");
