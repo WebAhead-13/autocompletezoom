@@ -49,8 +49,8 @@ server.get("/",(req,res) =>{
         </head>
         <body>
           <div class="topnav">
-            <a class="active" href="localhost:3000">Home</a>
-            <a href="localhost:3000/search">Search</a>
+            <a class="active" href="/">Home</a>
+            <a href="/search">Search</a>
             <h3 style="display:inline; color:#04AA6D; margin-left:600px; margin-top:10px;">You Are Connected as: ${user.email} </h3>
             <a href="/log-out">Log out</a>
 
@@ -74,9 +74,9 @@ server.get("/",(req,res) =>{
         </head>
         <body>
           <div class="topnav">
-            <a class="active" href="localhost:3000">Home</a>
-            <a href="localhost:3000/search">Search</a>
-            <a href="localhost:3000/log-in">Log in</a>
+            <a class="active" href="/">Home</a>
+            <a href="/search">Search</a>
+            <a href="/log-in">Log in</a>
           </div>
           
         </body>
@@ -142,5 +142,4 @@ server.get("/log-in", (req, res) => {
 
 
 
-  
 
