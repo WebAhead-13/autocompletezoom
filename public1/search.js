@@ -1,7 +1,9 @@
+//const { json } = require("express/lib/response");
 
 var data ;
 const input = document.querySelector("#myInput");
 const form = document.querySelector("form");
+const output=document.querySelector("output");
 let searchText="";
 
 
@@ -50,17 +52,43 @@ fetch("/employees")
   
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+    
     console.log("show "+searchText)
     
    
     fetch(`/employees/${searchText}`)
     .then(response => {
-      if (!response.ok) throw new Error(response.status);
-        console.log(response)})
-  .then (json => {
-    console.log(json)
+      //if (!response.ok) throw new Error(response.status);
+     // if (response==undefined) 
+      //console.log(response.json())
+      return response.json()})
+  .then (data => {
+    output.innerHTML="";
+    if(data.error)
+     output.innerHTML=data.error;
+    else
+      output.innerHTML+=data.jobTitleName;
+      output.innerHTML+=data.id;
+      output.innerHTML+=data.firstName;
+      output.innerHTML+=data.lastName;
+      output.innerHTML+=data.region;
+      output.innerHTML+=data.phoneNumber;
+      output.innerHTML+=data.emailAddress;
+
+
+
+
+
+      
+   // output.innerHTML="";
+    //if (json==undefined) output.innerHTML="please choose one of the option!";
+    //else
+    //{
+     // console.log(json)
+    
+    //}
    })
- .catch(console.error);
+ //.catch(e=>console.log(e));
 
    
   })

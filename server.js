@@ -118,9 +118,9 @@ server.get("/log-in", (req, res) => {
   server.get("/employees/:name", (req, res) => {
     const emn = jsonEmployee.Employees.find((p) => p.preferredFullName === req.params.name);
     console.log(emn);
-    //if (emn==undefined){
-     // res.send("undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined");  
-   // }
+    if (emn==undefined){
+      res.status(404).send({error:"shut up!"});  
+    }
     res.send(emn);
     
   });
