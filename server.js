@@ -2,7 +2,8 @@ const express = require("express");
 const cookieParser=require("cookie-parser");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
-const jsonEmployee = require("./employees.json")
+const jsonEmployee = require("./employees.json");
+const { parse } = require("dotenv");
 
 const SECRET =process.env.SECRET;
 
@@ -113,6 +114,16 @@ server.get("/log-in", (req, res) => {
     
   })
 
+
+  server.get("/employees/:name", (req, res) => {
+    const emn = jsonEmployee.Employees.find((p) => p.preferredFullName === req.params.name);
+    console.log(emn);
+    if (emn==undefined){
+      res.send("undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined");  
+    }
+    res.send(emn);
+    
+  });
   
 
   server.get("/search",checkAuth, (req, res) => {
@@ -168,5 +179,4 @@ server.get("/log-in", (req, res) => {
 
 
 
-  
 

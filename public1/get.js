@@ -52,9 +52,17 @@ fetch("/employees")
     event.preventDefault();
     console.log("show "+searchText)
     
-
+   
+    fetch(`/employees/${searchText}`)
+    .then(response => {
+   if (!response.ok) throw new Error(response.status);
+  console.log(response);
+   //   return response.json()
+// })
+// .then (json => {
+//    data=json;
+//    console.log(json)
+  })
+// .catch(console.error);
 
   });
-
-
-
