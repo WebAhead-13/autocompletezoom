@@ -110,8 +110,9 @@ server.get("/log-in", (req, res) => {
 
   server.get("/employees", (req, res) => {
     res.send(jsonEmployee);
-
+    
   })
+
   
 
   server.get("/search",checkAuth, (req, res) => {
@@ -136,8 +137,7 @@ server.get("/log-in", (req, res) => {
       <div class="autocomplete" style="width:300px;">
         <input list="results" id="myInput" type="text" name="myCountry" placeholder="Employee Name">
         <datalist id="results">
-  
-        
+     
         </datalist>
       </div>
       <input type="submit">
