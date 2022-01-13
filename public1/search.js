@@ -1,3 +1,4 @@
+const { json } = require("express/lib/response");
 
 var data ;
 const input = document.querySelector("#myInput");
@@ -55,14 +56,13 @@ fetch("/employees")
    
     fetch(`/employees/${searchText}`)
     .then(response => {
-   if (!response.ok) throw new Error(response.status);
-  console.log(response);
-   //   return response.json()
-// })
-// .then (json => {
-//    data=json;
-//    console.log(json)
-  })
-// .catch(console.error);
+      if (!response.ok) throw new Error(response.status);
+        console.log(response)})
+  .then (json => {
+    console.log(json)
+   })
+ .catch(console.error);
 
-  });
+   
+  })
+;

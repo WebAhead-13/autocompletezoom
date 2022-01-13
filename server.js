@@ -118,9 +118,9 @@ server.get("/log-in", (req, res) => {
   server.get("/employees/:name", (req, res) => {
     const emn = jsonEmployee.Employees.find((p) => p.preferredFullName === req.params.name);
     console.log(emn);
-    if (emn==undefined){
-      res.send("undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined");  
-    }
+    //if (emn==undefined){
+     // res.send("undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined");  
+   // }
     res.send(emn);
     
   });
@@ -152,11 +152,11 @@ server.get("/log-in", (req, res) => {
         </datalist>
       </div>
       <input type="submit">
-
+        
          
    </form>
 
-
+      <output></output>
     <script src="Search.js"> </script>
     </body>
     </html>
