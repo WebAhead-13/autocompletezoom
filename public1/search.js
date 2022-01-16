@@ -11,6 +11,7 @@ const country=document.getElementById("country");
 const outputEmployee = document.querySelector("outputEmployee");
 const container=document.querySelector(".container");
 let searchText="";
+outputEmployee.style.visibility = "hidden";
 
 
 fetch("/employees")
@@ -67,11 +68,14 @@ fetch("/employees")
       return response.json()})
     .then (data => {
       output.innerHTML="";
-     //  outputEmployee.style.visibility = "hidden"; doesn't Work!!!
+      outputEmployee.style.visibility = "hidden";
+     
       if(data.error) {
       output.innerHTML=data.error;
       }
       else {
+        outputEmployee.style.visibility = "visible";
+        
         fullName.innerHTML = data.preferredFullName+ `<span>${data.jobTitleName}</span>`
         country.innerHTML = data.region;
         phoneNumber.innerHTML = data.phoneNumber;

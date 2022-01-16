@@ -93,11 +93,27 @@ server.get("/",(req,res) =>{
 
 server.get("/log-in", (req, res) => {
     res.send(`
-      <h1>Log in</h1>
-      <form action="/log-in" method="POST">
-        <label for="email">Email</email>
-        <input type="email" id="email" name="email">
-      </form>
+    <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="styleLogin.css">
+        
+        </head>
+
+      <body>
+         
+        
+         <form action="/log-in" method="POST">
+         <h1>Log in</h1>
+           <label for="email">Email</email>
+           <input type="email" id="email" name="email">
+         </form>
+      </body>
+    </html>
     `);
   });
 
@@ -119,7 +135,7 @@ server.get("/log-in", (req, res) => {
     const emn = jsonEmployee.Employees.find((p) => p.preferredFullName === req.params.name);
     console.log(emn);
     if (emn==undefined){
-      res.status(404).send({error:"shut up!"});  
+      res.status(404).send({error:"you should choose one!"});  
     }
     res.send(emn);
     
