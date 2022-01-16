@@ -1,12 +1,14 @@
 body{
-  background-image: url("http://cdn26.us1.fansshare.com/photo/1080x800/abstract-data-black-background-1957195075.jpg");
+  background-image: url("https://www.schemecolor.com/wallpaper?i=4334&og");
   background-repeat:no-repeat;
   background-size: cover;
 /* background-color: black; */
 }
 .topnav {
+    margin-left: 25%;
     background-color: transparent;
     overflow: hidden;
+
   }
 
   
