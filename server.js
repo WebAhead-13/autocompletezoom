@@ -139,7 +139,7 @@ server.get("/log-in", (req, res) => {
         <link rel="stylesheet" href="styleSearch.css">
     </head>
     <body>
-        
+      <div id="autocomplete">  
     <h2>Autocomplete</h2>
     
     <p>Start typing:</p>
@@ -147,7 +147,7 @@ server.get("/log-in", (req, res) => {
     <form autocomplete="off" action="/action_page.php">
       <div class="autocomplete" style="width:300px;">
         <input list="results" id="myInput" type="text" name="myCountry" placeholder="Employee Name">
-        <datalist id="results">
+        <datalist id="results"> 
   
         
         </datalist>
@@ -156,7 +156,7 @@ server.get("/log-in", (req, res) => {
 
          
    </form>
-
+   </div>
 
     <script src="Search.js"> </script>
     </body>

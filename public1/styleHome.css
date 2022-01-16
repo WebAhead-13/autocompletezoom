@@ -1,11 +1,11 @@
 body{
-  background-image: url("https://us.123rf.com/450wm/jirsak/jirsak1601/jirsak160100071/51751193-human-resources-crm-data-mining-and-social-media-concept-officer-looking-for-employee-represented-by.jpg?ver=6");
+  background-image: url("http://cdn26.us1.fansshare.com/photo/1080x800/abstract-data-black-background-1957195075.jpg");
   background-repeat:no-repeat;
   background-size: cover;
 /* background-color: black; */
 }
 .topnav {
-    background-color: #333;
+    background-color: transparent;
     overflow: hidden;
   }
 
@@ -28,6 +28,6 @@ body{
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: cornflowerblue;
     color: white;
   }
