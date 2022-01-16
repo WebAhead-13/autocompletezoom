@@ -137,12 +137,14 @@ server.get("/log-in", (req, res) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="styleSearch.css">
+        <script src="https://kit.fontawesome.com/8483871a13.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         
-    <h2>Autocomplete</h2>
+    <h2>Search Employee</h2>
     
-    <p>Start typing:</p>
+    <p>Start typing , you can type family name or first name:</p>
     
     <form autocomplete="off" action="/action_page.php">
       <div class="autocomplete" style="width:300px;">
@@ -156,7 +158,23 @@ server.get("/log-in", (req, res) => {
          
    </form>
 
-      <output></output>
+   <output>
+   </output>
+
+      <outputEmployee>
+       <div class="container">
+         <div class="card">
+          <h1 id="name"> </h1>
+          <ul>
+            <li id="number"> </li>
+            <li id="email"> </li>
+            <li id="country"> </li>
+          </ul>
+    
+        </div>
+       </div>
+      </outputEmployee>
+
     <script src="Search.js"> </script>
     </body>
     </html>

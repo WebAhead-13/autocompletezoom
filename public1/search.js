@@ -4,6 +4,12 @@ var data ;
 const input = document.querySelector("#myInput");
 const form = document.querySelector("form");
 const output=document.querySelector("output");
+const fullName=document.getElementById("name");
+const email=document.getElementById("email");
+const phoneNumber=document.getElementById("number");
+const country=document.getElementById("country");
+const outputEmployee = document.querySelector("outputEmployee");
+const container=document.querySelector(".container");
 let searchText="";
 
 
@@ -58,37 +64,26 @@ fetch("/employees")
    
     fetch(`/employees/${searchText}`)
     .then(response => {
-      //if (!response.ok) throw new Error(response.status);
-     // if (response==undefined) 
-      //console.log(response.json())
       return response.json()})
-  .then (data => {
-    output.innerHTML="";
-    if(data.error)
-     output.innerHTML=data.error;
-    else
-      output.innerHTML+=data.jobTitleName;
-      output.innerHTML+=data.id;
-      output.innerHTML+=data.firstName;
-      output.innerHTML+=data.lastName;
-      output.innerHTML+=data.region;
-      output.innerHTML+=data.phoneNumber;
-      output.innerHTML+=data.emailAddress;
-
-
-
-
-
-      
-   // output.innerHTML="";
-    //if (json==undefined) output.innerHTML="please choose one of the option!";
-    //else
-    //{
-     // console.log(json)
+    .then (data => {
+      output.innerHTML="";
+     //  outputEmployee.style.visibility = "hidden"; doesn't Work!!!
+      if(data.error) {
+      output.innerHTML=data.error;
+      }
+      else {
+        fullName.innerHTML = data.preferredFullName+ `<span>${data.jobTitleName}</span>`
+        country.innerHTML = data.region;
+        phoneNumber.innerHTML = data.phoneNumber;
+        email.innerHTML = data.emailAddress;
     
-    //}
+
+    }
+
+
+
    })
- //.catch(e=>console.log(e));
+
 
    
   })
